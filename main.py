@@ -22,11 +22,21 @@ from db.models import *
 ############################################################################
 ## START OF APPLICATION
 ############################################################################
-""" Replace the code below with your own """
 
-# Seed a few users in the database
-User.objects.create(name='Dan')
-User.objects.create(name='Robert')
+# populate with products
+products = [
+    {"upc_code": "12345678910", "name": "apple", "price": "1.99"},
+    {"upc_code": "12345678911", "name": "banana", "price": "2.99"},
+    {"upc_code": "12345678912", "name": "orange", "price": "4.99"},
+    {"upc_code": "12345678913", "name": "grapes", "price": "7.99"},
+    {"upc_code": "12345678914", "name": "milk", "price": "5.00"},
+]
 
-for u in User.objects.all():
-    print(f'ID: {u.id} \tUsername: {u.name}')
+for p in products:
+    Product.objects.create(
+        upc_code=p["upc_code"], 
+        name=p["name"], 
+        price=p["price"]
+        )
+
+print("products have been created and added to database")
