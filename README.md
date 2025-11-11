@@ -7,7 +7,7 @@
 
 The following project is a standalone cash register application that uses Django ORM. Products to be sold can be populated with their name, upc code, and price in the database, and it contains a Graphical User Interface (GUI) for the user to simulate adding products to their cart according to their upc code, and calculates the total bill of all items.
 
-The project is setup with the model for the product object created in db/models.py, the items are created and populate the database in main.py, and the product_scanner.py being the gui for the users to use the cash register system.
+The project is set up with the model for the product object created in db/models.py, the items are created and populate the database in main.py, and the product_scanner.py being the gui for the users to use the cash register system.
 
 #### File structure
 
@@ -29,6 +29,7 @@ django-orm/
 - clone the repository on your local machine
 - Create a virtual environment and install django `python -m venv venv; source venv/bin/activate; pip install django`
 - Initialize the database `python manage.py makemigrations db; python manage.py migrate`
+- add products to the database `python main.py`
 - run the project `python product_scanner.py`
 
 ### Example usage of the cash register
