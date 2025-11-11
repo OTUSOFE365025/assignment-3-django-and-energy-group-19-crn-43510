@@ -1,7 +1,7 @@
 # Django and Energy Assignment
 ### Contributions
-Part 1: Neha Khan
-Part 2: Huda Saeed
+- Part 1: Neha Khan
+- Part 2: Huda Saeed
 
 ### Project Overview and Setup
 
